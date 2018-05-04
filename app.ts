@@ -15,12 +15,12 @@ let concessionaria = new Concessionaria('Av Paulista', listaDeCarros)
 //console.log(concessionaria.mostrarListaDeCarros()) 
 
 let cliente = new Pessoa('João', 'Veloster')
-console.log(cliente.dizerCarroPreferido())
+//console.log(cliente.dizerCarroPreferido())
 
 concessionaria.mostrarListaDeCarros().map((carro: Carro) => {
     if (carro['modelo'] == cliente.dizerCarroPreferido()) {
         cliente.comprarCarro(carro)
-    }
+    } 
 })
 
 console.log(cliente.dizerCarroQueTem())
